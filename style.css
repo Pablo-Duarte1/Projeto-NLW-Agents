@@ -1,0 +1,29 @@
+body {
+    background-image: url("./assets/bg.jpg");
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px;
+    padding: 2px;
+}
+
+body {
+    background-repeat: no-repeat; /* keyword */
+    background-size: 100% auto; /* width and height */
+    background-position: top center; /* position eight x and y */
+    background-color: #121214; /* HEX: RR, GG, BB */
+}
+
+.backtittle {
+    text-align: center;
+    color: white;
+}
