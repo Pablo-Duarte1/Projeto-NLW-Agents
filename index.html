@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,10 +15,31 @@
         </header>
         <main>
             <section>
-                <h2 class="title">Assistente de meta</h2>
-                <p class="backtittle">Pergunte sobre estrátegias, builds e dicas 
-                    para seus jogos!</p>
+                <div>
+                    <h2 class="text">Assistente de meta</h2>
+                    <p>Pergunte sobre estrátegias, builds e dicas 
+                        para seus jogos!
+                    </p>
+                    <form id="form">
+                        <input id="apiKey" type="password" placeholder="Informe a API KEY do Gemini" required>
+                        <select id="gameSelect">
+                            <option value="">Selecione um jogo</option>
+                            <option value="Valorant">Valorant</option>
+                            <option value="lol">League of Legends</option>
+                            <option value="lol">CSGO 2</option>
+                        </select>
+
+                        <input id="questionInput" type="text" placeholder="Melhor Build para ADC..." required>
+                        <button id="askButton">Perguntar</button>
+                    </form>
+                    <div id="aiResponse">
+                        <div class="response-content">
+
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
+        <script src="./script.js"></script>
     </body>
 </html>
