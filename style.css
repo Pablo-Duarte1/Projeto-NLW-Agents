@@ -116,3 +116,40 @@ button:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 1rem rgba(255, 248, 107, 0.2);
 }
+
+button:disabled {
+    transition: initial;
+    transform: initial;
+    box-shadow: initial;
+    cursor: not-allowed;
+    color: black;
+}
+
+#aiResponse {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    border-left: 4px solid #43E7AD;
+}
+
+#aiResponse ul {
+    padding-left: 1.5rem;
+}
+
+#aiResponde p {
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.loading {
+    animation: pulse is infinite;
+}
+
+@keyframes pulse {
+    50% {
+        opacity: 0.5;
+    }
+}
