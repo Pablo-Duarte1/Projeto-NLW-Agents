@@ -12,7 +12,6 @@ const markDownToHTML = (text) =>
     const converter = new showdown.converter()
     return converter.maakeHtml(text)
 }
-// chave api: AIzaSyD9uP6pHv-rVZqc_hb8scizouiT5j6DWPY
 const perguntarAI = async(question, game, apiKey) => 
 {
     const model = "gemini-2.5-flash"
